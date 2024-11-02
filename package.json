@@ -1,4 +1,5 @@
 {
+  "homepage": "https://allsafe.githu.io/Link-in-bio",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^14.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.3.0",
     "web-vitals": "^3.1.0"
   },
   "overrides": {
@@ -17,6 +19,8 @@
   },
   "scripts": {
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest"
